@@ -1,0 +1,44 @@
+# AI - SENTIMENT ANALYZER
+
+
+# A cloud-based web application that analyzes text sentiment using VADER Sentiment Analysis with a modern, interactive dashboard.
+
+# ✨ Features
+# Real-time sentiment analysis (Positive/Negative/Neutral)
+
+# Detailed sentiment breakdown with percentages
+
+# Compound score visualization (-1 to +1 scale)
+
+# Dark/Light mode toggle for better UX
+
+# Responsive design works on all devices
+
+# Easy deployment to Heroku or GitHub Pages
+
+# 🛠 Tech Stack
+# Component	Technology
+# Frontend	HTML5, CSS3, JavaScript
+# Backend	Python Flask
+# AI Model	VADER Sentiment Analysis
+# Deployment	Heroku (PaaS), GitHub Pages
+
+
+# Clone repository
+git clone https://github.com/bhuviii02/sentiment-analyzer.git
+cd sentiment-analyzer
+
+# if you are using python3 then change pip to pip3
+# Install dependencies
+pip install -r requirements.txt
+
+# if you are using python3 then change pip to pip3
+# Run the app
+python app.py
+
+# This for loaclhost
+http://127.0.0.1:5000/
+
+
+
+

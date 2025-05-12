@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Sentiment Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="/static/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                <span class="icon">🧠</span>
+                <span>AI Sentiment Analyzer</span>
+            </h1>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+            </button>
+        </header>
+
+        <main>
+            <div class="input-card">
+                <div class="input-header">
+                    <h2>Enter Your Text</h2>
+                    <div class="char-count" id="char-count">0/500</div>
+                </div>
+                <textarea 
+                    id="text-input" 
+                    placeholder="Type or paste your text here..."
+                    maxlength="500"
+                ></textarea>
+                <button id="analyze-btn" class="primary-btn">
+                    <span class="btn-icon">🔍</span>
+                    Analyze Sentiment
+                </button>
+            </div>
+
+            <div class="result-card" id="result-card">
+                <div class="result-header">
+                    <h2>Analysis Results</h2>
+                    <div class="sentiment-badge" id="sentiment-badge">Neutral</div>
+                </div>
+
+                <div class="sentiment-meters">
+                    <div class="meter positive">
+                        <div class="meter-label">
+                            <span>Positive</span>
+                            <span class="meter-value" id="positive-value">0%</span>
+                        </div>
+                        <div class="meter-bar">
+                            <div class="meter-fill" id="positive-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="meter negative">
+                        <div class="meter-label">
+                            <span>Negative</span>
+                            <span class="meter-value" id="negative-value">0%</span>
+                        </div>
+                        <div class="meter-bar">
+                            <div class="meter-fill" id="negative-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="meter neutral">
+                        <div class="meter-label">
+                            <span>Neutral</span>
+                            <span class="meter-value" id="neutral-value">0%</span>
+                        </div>
+                        <div class="meter-bar">
+                            <div class="meter-fill" id="neutral-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="compound-score">
+                    <div class="score-header">
+                        <h3>Compound Score</h3>
+                        <span class="score-value" id="compound-score">0.00</span>
+                    </div>
+                    <div class="score-scale">
+                        <span>Negative</span>
+                        <div class="scale-bar">
+                            <div class="scale-indicator" id="scale-indicator"></div>
+                        </div>
+                        <span>Positive</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
