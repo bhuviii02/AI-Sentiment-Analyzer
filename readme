@@ -39,6 +39,9 @@ python app.py
 # This for loaclhost
 http://127.0.0.1:5000/
 
+# this for website is online
+https://ai-sentiment-analyzer-zkwc.onrender.com
+
 
 
 
